@@ -1,25 +1,18 @@
----
 language: node_js
 node_js:
-  - "10"
-
+- '10'
 dist: xenial
-
 addons:
   chrome: stable
-
 cache:
   directories:
-    - $HOME/.npm
-
+  - "$HOME/.npm"
 env:
   global:
-    # See https://git.io/vdao3 for details.
-    - JOBS=1
-
+  - JOBS=1
+  - secure: LcI/htyo9P6F3F0Fwtrj0af2SsYwU/w6NgGA6+Doa5+p1Ifq7xwRVUlOwy//syYLIOgKb7ldUkXAEj/1L9aQ+eVybfxYLUeI3CEGakYqVfuy4D+H1a4b9E7HUD68Pu6owp23g0W5dm0ygy+Wqb5qVHUOiFm5xecoGfuWvS96jfM3OXeVNMCKBI9f3ANsD12yNxBE4X6n7Cf1oIHtUxqns9thBe93tQb+SUCnGsB16yZJUD0U7dq5beh3cFq9SQbXvQLYE6+ISMJjJe9idl1wllF2Q2G75R58wJKh2FGoXy57LItsyaw1PSHla/0rlUrSBFXwCV9pskR2SAXXU7hqfphIVhSY4Y9N09hUahyCSSrEc0kPyVl2iP8fOkJM5LvEmWrlhHndqCA4BoYYTqWf6G1I2GnXgSbmL9Bfec+cr7//WQFH4psLMo6pEW9/hOeZLkB4mSc9Gz56Mq6XVbQ/4fPybZ5nuM43FGZ0X2IBO4tIkfCvllTIbHnmuIpLnlreJf2V3UXT5rx7l1uIsd5QOOuwdkgPSkCT7R94qZ1TuXl2aTuQEf9VmpCZ2+CqLJiQaOtawqQnf5hjMeNF7u5pjwTo3fB0whzIes0QgtBZzSdP+PqWJp85STw8gJXCb86iWNTjI4N6mpIqQxigVzQSlob5+bCfs1GyCDw5kTCc+5Y=
 branches:
   only:
-    - master
-
+  - main
 script:
-  - npm test
+- npm test
